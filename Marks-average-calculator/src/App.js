@@ -1,7 +1,7 @@
-import MainPage  from "./MainPage";
+import MainPage from "./MainPage";
 import Sidebar from "./Sidebar";
 
-function App() {
+export default function App() {
   return (
     <div className="app">
       <Sidebar />
@@ -9,5 +9,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

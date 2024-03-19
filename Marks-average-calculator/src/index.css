@@ -1,3 +1,33 @@
+button {
+  font-size: 1.8rem;
+  background-color: #ff3fa4;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.5s linear;
+}
+button:hover {
+  background-color: #ff3fa5bd;
+  cursor: pointer;
+}
+button:active {
+  transform: translateY(3px);
+}
+
+select {
+  font-size: 2rem;
+  padding: 4px 8px;
+  border: 1.5px solid gray;
+  border-radius: 5px;
+  margin-top: 0.3rem;
+}
+
+select:focus {
+  outline: none;
+  border: 1.6px solid #ff3fa4;
+  border-radius: 5px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -15,8 +45,8 @@ body {
   height: 100%;
   font-family: sans-serif;
   font-size: 1.8rem;
-  background-color: #fff;
-  color: #050505;
+  background-color: #ffeef4;
+  color: #45474b;
   padding: 2rem;
   overflow: hidden;
 }
@@ -35,27 +65,20 @@ body {
   flex-direction: column;
   justify-content: space-between;
   flex-basis: 50rem;
-  background-color: darkgray;
+  background-color: #fff;
   padding: 2.5rem;
-}
-
-.main {
-  width: 100%;
-  background-color: #9595952e;
-  padding: 3.5rem;
 }
 
 .reaslte {
   font-family: monospace;
   word-spacing: -7px;
   width: 100%;
-  background-color: #787878ed;
-  color: #000;
+  background-color: #fefefe;
   padding: 0.4rem 1.3rem 1.3rem;
   border-left: 5px solid green;
   border-radius: 9px;
   margin-bottom: 10px;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .reaslte-name {
@@ -64,6 +87,7 @@ body {
   font-size: 2.4rem;
   padding-bottom: 5px;
   font-weight: 600;
+  color: #000;
 }
 
 .reaslte-dscribtion {
@@ -83,4 +107,139 @@ footer a {
   color: blue;
 }
 
-/* reaslte-dscribtion */
+/* Main part */
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  padding: 0.6rem 3.7rem 3.7rem 3.7rem;
+}
+
+h2 {
+  flex-basis: 9rem;
+  font-family: cursive;
+  font-size: 5.4rem;
+  text-align: center;
+  color: #ff3fa4;
+  text-shadow: -1px -3px black;
+  margin-bottom: 1.4rem;
+}
+
+/* Form Part */
+
+form {
+  width: 60%;
+  height: 10rem;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: left;
+  gap: 1.5rem;
+  align-items: center;
+  font-weight: 500;
+  margin: 2.5rem 0;
+}
+
+label {
+  font-size: 2.1rem;
+  color: #000;
+}
+input {
+  width: 95%;
+  font-size: 2rem;
+  padding: 4px 8px;
+  border: 1.5px solid gray;
+  border-radius: 5px;
+  margin-top: 0.3rem;
+}
+
+form select {
+  width: 95%;
+}
+
+input:focus {
+  outline: none;
+  border: 1.6px solid #ff3fa4;
+  border-radius: 5px;
+}
+
+form button {
+  width: 130px;
+  margin-top: 23px;
+}
+
+form button span {
+  font-size: 1.5rem;
+}
+
+/* Description part */
+.descriptin {
+  flex-basis: 100%;
+  padding: 2.25rem 0;
+}
+
+.conatiner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.icons {
+  width: 15%;
+  font-size: 1.5rem;
+  text-align: left;
+  transition: all 0.3s linear;
+  display: flex;
+  justify-content: right;
+  gap: 2px;
+}
+.icons div span {
+  width: 60%;
+}
+.icons strong {
+  font-family: monospace;
+  width: 40%;
+}
+.icons:hover span:hover {
+  cursor: pointer;
+  font-size: 2rem;
+}
+.range {
+  width: 75%;
+  background-color: white;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.value {
+  background-color: green;
+  width: 74%;
+  border-radius: 10px;
+  color: #fff;
+  text-shadow: -0.8px -0.9px black;
+}
+
+.conatiner .cridete {
+  width: 10%;
+}
+
+/* Buttons part finle */
+.controle {
+  flex-basis: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.controle button {
+  width: 150px;
+}
+
+.controle select {
+  width: 170px;
+}
